@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import User from './User'
+import User from './user/User'
 
 function Header() {
   return(
