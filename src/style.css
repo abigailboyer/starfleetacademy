@@ -12,3 +12,26 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  display: inline;
+}
+
+#user {
+  display: inline;
+  float: right;
+}
+
+#user p {
+  display: inline;
+  margin-right: 10px;
+}
