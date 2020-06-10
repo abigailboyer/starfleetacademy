@@ -38,6 +38,10 @@ class Signup extends React.Component {
               <p id="generatedUsername">Your username: </p>
             </li>
             <li>
+              <label htmlFor="userEmail">Email</label>
+              <input type="email" id="userEmail" placeholder="jimkirk@gmail.com" />
+            </li>
+            <li>
               <label htmlFor="password">Password</label>
               <input type="password" id="password" placeholder="Password" />
             </li>
