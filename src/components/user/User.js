@@ -7,7 +7,7 @@ function User() {
       {/* 2. student's name generated from state */}
       {/* 3. arrow to click on for drop down menu */}
       {/* drop down menu contains user settings and logout */}
-      James T. Kirk
+      <p>James T. Kirk</p>
       <button id="logout">Logout</button>
     </section>
   )
