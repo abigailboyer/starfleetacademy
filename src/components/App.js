@@ -1,14 +1,17 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import '../style.css'
-import Header from './Header'
-import Nav from './Nav'
+import Dashboard from './Dashboard'
 
 function App() {
   return (
-    <main>
-      <Header />
-      <Nav />
-    </main>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Dashboard} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
