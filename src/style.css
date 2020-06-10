@@ -1,0 +1,14 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Rambla', sans-serif;
+  font-style: italic;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
