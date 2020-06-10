@@ -20,6 +20,8 @@ function Login() {
             </li>
           </ul>
         </form>
+
+        <p id="createAccount">Or <a href="/signup">create an account</a></p>
       </section>
     </main>
   )
