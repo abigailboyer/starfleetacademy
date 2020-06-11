@@ -1,16 +1,16 @@
 import React from 'react'
-import UserContext from '../../providers/UserProvider'
+import {UserContextConsumer} from '../../providers/UserProvider'
 
 function User(props) {
   return(
-    <UserContext.Consumer>
+    <UserContextConsumer>
       {user => (
         <section id="user">
           <p>{user}</p>
           <button id="logout">Logout</button>
         </section>
       )}
-    </UserContext.Consumer>
+    </UserContextConsumer>
   )
 }
 

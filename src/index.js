@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 import './style.css';
 import App from './components/App';
-import UserContext from './providers/UserProvider'
+import {UserContextProvider} from './providers/UserProvider'
 
 ReactDOM.render(
-  <UserContext.Provider value={"James T. Kirk"}>
+  <UserContextProvider>
     <Router>
       <App />
     </Router>
-  </UserContext.Provider>,
+  </UserContextProvider>,
   document.getElementById('root')
 );
