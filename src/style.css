@@ -1,11 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-}
-
-h1 {
-  font-family: 'Rambla', sans-serif;
-  font-style: italic;
+  color: #3c3c3c;
+  background-color: #eee;
 }
 
 ol,
@@ -23,6 +20,11 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-family: 'Rambla', sans-serif;
+  font-style: italic;
+}
+
 header h1 {
   display: inline;
 }
@@ -35,4 +37,10 @@ header h1 {
 #user p {
   display: inline;
   margin-right: 10px;
+}
+
+@media (min-width: 700px) {
+  body {
+    margin: 64px;
+  }
 }
