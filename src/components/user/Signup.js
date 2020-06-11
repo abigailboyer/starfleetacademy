@@ -7,6 +7,15 @@ class Signup extends React.Component {
     this.state = {};
   }
 
+  handleChange(e) {
+    this.setState({value: e.target.value});
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log("submitted");
+  }
+
   render() {
     return (
       <main>
@@ -16,12 +25,7 @@ class Signup extends React.Component {
           <ul>
             <li>
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" placeholder="Jim Kirk" />
-            </li>
-            <li>
-              {/* change to radio or drop down options later */}
-              <label htmlFor="species">Species</label>
-              <input type="text" id="species" placeholder="Human" />
+              <input type="text" id="name" placeholder="Jim Kirk" value={this.state.name} onChange={this.handleChange} />
             </li>
             <li>
               {/* change to something more graphic and pretty to

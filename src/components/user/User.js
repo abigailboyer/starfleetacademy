@@ -1,15 +1,16 @@
 import React from 'react'
+import UserContext from '../../providers/UserProvider'
 
-function User() {
+function User(props) {
   return(
-    <section id="user">
-      {/* 1. icon based upon student's track */}
-      {/* 2. student's name generated from state */}
-      {/* 3. arrow to click on for drop down menu */}
-      {/* drop down menu contains user settings and logout */}
-      <p>James T. Kirk</p>
-      <button id="logout">Logout</button>
-    </section>
+    <UserContext.Consumer>
+      {user => (
+        <section id="user">
+          <p>{user}</p>
+          <button id="logout">Logout</button>
+        </section>
+      )}
+    </UserContext.Consumer>
   )
 }
 
