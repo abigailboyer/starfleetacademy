@@ -2,9 +2,8 @@ import React from 'react'
 
 function Schedule() {
   return (
-    <section className="card" id="schedule">
-
-    </section>
+    <article className="card" id="schedule">
+    </article>
   )
 }
 
