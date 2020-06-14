@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import '../style.css'
-import Dashboard from './Dashboard'
+import Dashboard from './dashboard/Dashboard'
 import Signup from './user/Signup'
 import Login from './user/Login'
 
