@@ -9,24 +9,29 @@ import StudentInfo from './StudentInfo'
 function Cards() {
   return(
     <section id="cardContainer">
-      <section className="card comms">
+      <article className="container" id="commsContainer">
         <Comms />
-      </section>
-      <section className="card weather">
+        <p className="subtext">Go to comms ></p>
+      </article>
+      <article className="container" id="weatherContainer">
         <Weather />
-      </section>
-      <section className="card schedule">
+      </article>
+      <article className="container" id="scheduleContainer">
         <Schedule />
-      </section>
-      <section className="card courses">
+        <p className="subtext">View detail schedule ></p>
+      </article>
+      <article className="container" id="coursesContainer">
         <Courses />
-      </section>
-      <section className="card tracker">
+        <p className="subtext">Go to class detail ></p>
+      </article>
+      <article className="container" id="trackerContainer">
         <Tracker />
-      </section>
-      <section className="card studentInfo">
+        <p className="subtext">for 2252.0219</p>
+      </article>
+      <article className="container" id="studentInfoContainer">
         <StudentInfo />
-      </section>
+        <p className="subtext">Petition for track change ></p>
+      </article>
     </section>
   )
 }

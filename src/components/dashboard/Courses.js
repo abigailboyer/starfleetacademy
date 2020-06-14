@@ -2,8 +2,9 @@ import React from 'react'
 
 function Courses() {
   return (
-    <section id="courses">
-    </section>
+    <article className="card" id="courses">
+
+    </article>
   )
 }
 

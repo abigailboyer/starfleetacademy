@@ -3,13 +3,15 @@ import Message from './Message'
 
 function Comms() {
   return (
-    <section id="messages">
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-    </section>
+    <article className="card" id="comms">
+      <article id="messages">
+        <Message />
+        <Message />
+        <Message />
+        <Message />
+        <Message />
+      </article>
+    </article>
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tracker() {
   return (
-    <section id="tracker">
+    <article className="card" id="tracker">
       <ul>
         <li>
           <label for="meal-tracker-progress">Meal Credits</label>
@@ -17,7 +17,7 @@ function Tracker() {
           <progress id="energy-progress" max="200" value="10">10%</progress>
         </li>
       </ul>
-    </section>
+    </article>
   )
 }
 
