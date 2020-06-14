@@ -107,7 +107,7 @@ header {
   border-radius: 8px;
   border-right: 8px solid #A11A20; /* after adding data from fb, programatically decide course color based on category */
   border-left: 8px solid #A11A20;
-  margin: 16px 0;
+  margin: 16px 8px;
 }
 
 #course:first-child {
@@ -137,6 +137,16 @@ header {
   color: #4b4b4b;
   text-decoration: underline;
   text-align: right;
+}
+
+hgroup {
+  margin-top: 8px;
+  padding-left: 16px;
+}
+
+hgroup h5 {
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* tracker */
@@ -205,9 +215,6 @@ header {
     grid-row-start: 3;
     grid-row-end: 5;
   }
-
-  #studentInfoContainer {
-  }
 }
 
 @media (min-width: 1000px) {
@@ -216,7 +223,8 @@ header {
   #courses {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
+    gap: 8px 16px;
+    padding: 16px;
   }
 
   #course {
@@ -226,5 +234,10 @@ header {
   #course:first-child,
   #course:last-child {
     margin: 0;
+  }
+
+  hgroup {
+    grid-column: 1 / span 2;
+    margin: 8px 0;
   }
 }
