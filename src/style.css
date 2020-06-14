@@ -28,6 +28,14 @@ h1 {
   font-size: 28px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 !important;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -63,6 +71,7 @@ header {
   margin: 0 !important;
   text-align: right;
   padding-top: 8px;
+  text-decoration: underline;
 }
 
 #trackerContainer .subtext {
@@ -92,20 +101,58 @@ header {
   padding-bottom: 6px;
 }
 
-#weather h4,
-#weather h5,
-#weather h3 {
-  margin: 0 !important;
+/* courses */
+
+#course {
+  border-radius: 8px;
+  border-right: 8px solid #A11A20; /* after adding data from fb, programatically decide course color based on category */
+  border-left: 8px solid #A11A20;
+  margin: 16px 0;
+}
+
+#course:first-child {
+  margin-top: 8px;
+}
+
+#course:last-child {
+  margin-bottom: 8px;
+}
+
+#course ul {
+  padding: 8px;
+}
+
+#course h4 {
+  font-weight: normal;
+}
+
+.courseLevel,
+.courseTitle {
+  display: inline;
+  padding-right: 8px;
+  font-size: 16px;
+}
+
+.commInstructor {
+  color: #4b4b4b;
+  text-decoration: underline;
+  text-align: right;
 }
 
 @media (min-width: 700px) {
   body {
-    margin: 42px;
+    margin: 64px;
+    font-size: 16px;
   }
 
-  header h1 {
+  header {
+    margin-bottom: 48px;
+  }
+
+  h1 {
     font-size: 32px;
   }
+
 
   /* dashboard - grid layout */
 
@@ -127,9 +174,9 @@ header {
 
   #cardContainer {
     display: grid;
-    grid-template-columns: 30% auto auto auto;
+    grid-template-columns: 30% auto auto 30%;
     gap: 1px 21px;
-    align-items: flex-start;
+    align-items: start;
   }
 
   #commsContainer,
@@ -147,5 +194,24 @@ header {
     grid-column: 1 / span 3;
     grid-row-start: 3;
     grid-row-end: 5;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* courses 2 column layout */
+
+  #courses {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  #course {
+    margin: 0;
+  }
+
+  #course:first-child,
+  #course:last-child {
+    margin: 0;
   }
 }
