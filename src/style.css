@@ -47,24 +47,29 @@ header {
 
 /* dashboard */
 
-#cardContainer {
-  background-color: lightblue;
-}
-
 .card {
   background-color: white;
   border-radius: 8px;
 }
 
-.comms {
+.container {
+  margin-bottom: 16px;
+}
+
+.subtext {
+  margin: 0 !important;
+  text-align: right;
+}
+
+#comms {
   border-top: 21px solid #23729B;
 }
 
-.tracker {
+#tracker {
   border-top: 21px solid #A11A20;
 }
 
-.studentInfo {
+#studentInfo {
   border-top: 21px solid #EAD075;
 }
 
@@ -73,13 +78,28 @@ header {
   line-height: 16px;
 }
 
-#messages p, #messages h4 {
+#messages p,
+#messages h4 {
   margin: .5em !important;
+}
+
+#weather h4,
+#weather h5,
+#weather h3 {
+  margin: 0 !important;
 }
 
 @media (min-width: 700px) {
   body {
     margin: 42px;
+  }
+
+  header {
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    font-size: 32px;
   }
 
   /* dashboard - grid layout */
@@ -101,51 +121,26 @@ header {
   }
 
   #cardContainer {
-    background-color: lightblue;
     display: grid;
     grid-template-columns: 30% auto auto auto;
-    grid-gap: 25px;
+    gap: 1px 21px;
+    align-items: flex-start;
   }
 
-  .card {
-    background-color: white;
-    border-radius: 8px;
-  }
-
-  .comms {
-    border-top: 21px solid #23729B;
-  }
-
-  .comms, .weather {
+  #commsContainer,
+  #weatherContainer {
     grid-column: 1 / span 1;
   }
 
-  .schedule {
+  #scheduleContainer {
     grid-column: 2 / span 3;
     grid-row-start: 1;
     grid-row-end: 3;
   }
 
-  .courses {
+  #coursesContainer {
     grid-column: 1 / span 3;
     grid-row-start: 3;
     grid-row-end: 5;
-  }
-
-  .tracker {
-    border-top: 21px solid #A11A20;
-  }
-
-  .studentInfo {
-    border-top: 21px solid #EAD075;
-  }
-
-  #messages {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  #messages p, #messages h4 {
-    margin: .5em !important;
   }
 }
