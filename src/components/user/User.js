@@ -10,7 +10,7 @@ function User(props) {
         <UserContextConsumer>
           {user => (
             <section id="user">
-              <p>{user}</p>
+              <p>{/* user */}</p>
               <Logout />
             </section>
           )}

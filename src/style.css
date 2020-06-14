@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   color: #3c3c3c;
   background-color: #eee;
+  margin: 21px;
 }
 
 ol,
@@ -23,11 +24,16 @@ a:hover {
 h1 {
   font-family: 'Rambla', sans-serif;
   font-style: italic;
+  font-size: 28px;
 }
 
-header h1 {
-  display: inline;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* header user display name */
 
 #user {
   display: inline;
@@ -41,57 +47,21 @@ header h1 {
 
 /* dashboard */
 
-main {
-  display: grid;
-  grid-template-columns: 15% auto;
-}
-
-header {
-  grid-column: 1 / span 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav {
-  grid-column: 1;
-}
-
 #cardContainer {
   background-color: lightblue;
-  display: grid;
-  grid-template-columns: 30% auto auto auto;
-  grid-gap: 25px;
 }
 
 .card {
   background-color: white;
   border-radius: 8px;
-
 }
 
 .comms {
   border-top: 21px solid #23729B;
 }
 
-.comms, .weather {
-  grid-column: 1 / span 1;
-}
-
-.schedule {
-  grid-column: 2 / span 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.courses {
-  grid-column: 1 / span 3;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
 .tracker {
-  border-top: 21px solid #A11A20; 
+  border-top: 21px solid #A11A20;
 }
 
 .studentInfo {
@@ -99,8 +69,8 @@ nav {
 }
 
 #messages {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 #messages p, #messages h4 {
@@ -110,5 +80,72 @@ nav {
 @media (min-width: 700px) {
   body {
     margin: 42px;
+  }
+
+  /* dashboard - grid layout */
+
+  main {
+    display: grid;
+    grid-template-columns: 15% auto;
+  }
+
+  header {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    grid-column: 1;
+  }
+
+  #cardContainer {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 30% auto auto auto;
+    grid-gap: 25px;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .comms {
+    border-top: 21px solid #23729B;
+  }
+
+  .comms, .weather {
+    grid-column: 1 / span 1;
+  }
+
+  .schedule {
+    grid-column: 2 / span 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .courses {
+    grid-column: 1 / span 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .tracker {
+    border-top: 21px solid #A11A20;
+  }
+
+  .studentInfo {
+    border-top: 21px solid #EAD075;
+  }
+
+  #messages {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #messages p, #messages h4 {
+    margin: .5em !important;
   }
 }
