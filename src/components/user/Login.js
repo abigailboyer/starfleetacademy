@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import AccountHeader from './AccountHeader'
 import Firebase, {FirebaseContext} from '../../firebase'
+import starfleetacademy from '../../images/starfleet-academy.jpg'
 
 class Login extends React.Component {
   constructor() {
@@ -47,7 +48,11 @@ class Login extends React.Component {
       email === '';
 
     return(
-      <main>
+      <main id="signin">
+        <section className="bg">
+          <img src={starfleetacademy} className="fullScreen" />
+        </section>
+
         <AccountHeader />
 
         <section id="signin">
