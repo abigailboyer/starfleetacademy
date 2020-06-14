@@ -48,12 +48,9 @@ class Login extends React.Component {
       email === '';
 
     return(
-      <main id="signin">
-
-
-        <AccountHeader />
-
-        <section>
+      <main id="account">
+        <section className="accountForm">
+          <AccountHeader />
           <form id="signin-form" onSubmit={this.handleSubmit}>
             <ul>
               <li>
@@ -85,7 +82,7 @@ class Login extends React.Component {
             </ul>
           </form>
 
-          <p id="createAccount">Or <Link to="Signup">create an account</Link></p>
+          <p id="signupLink">Or <Link to="Signup">create an account</Link></p>
         </section>
       </main>
     )

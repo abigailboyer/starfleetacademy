@@ -4,7 +4,7 @@ function AccountHeader() {
   return (
     <header id="accountHeader">
       <h1>Starfleet Academy</h1>
-      <h2>Student Portal</h2>
+      <h3>Student Portal</h3>
     </header>
   )
 }
