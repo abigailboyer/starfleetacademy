@@ -105,6 +105,7 @@ input[type="email"] {
   margin: 0 0 8px 0;
   width: 250px;
   color: black;
+  font-family: 'Open Sans', sans-sans-serif;
 }
 
 input[type="submit"] {
@@ -134,7 +135,7 @@ input::placeholder {
   opacity: 80%;
 }
 
-label {
+form label {
   font-size: 14px;
   display: block;
   text-align: left;
@@ -170,12 +171,13 @@ label {
 .subtext {
   margin: 0 !important;
   text-align: right;
-  padding-top: 8px;
+  padding: 8px 8px 0 0;
   text-decoration: underline;
 }
 
 #trackerContainer .subtext {
   font-style: italic;
+  text-decoration: none;
 }
 
 #comms {
@@ -189,6 +191,8 @@ label {
 #studentInfo {
   border-top: 21px solid #EAD075;
 }
+
+
 
 #messages {
   font-size: 14px;
@@ -342,4 +346,5 @@ hgroup h5 {
 }
 
 @media (min-width: 2200px) {
+
 }
