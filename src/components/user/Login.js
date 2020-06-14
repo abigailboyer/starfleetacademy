@@ -49,13 +49,11 @@ class Login extends React.Component {
 
     return(
       <main id="signin">
-        <section className="bg">
-          <img src={starfleetacademy} className="fullScreen" />
-        </section>
+
 
         <AccountHeader />
 
-        <section id="signin">
+        <section>
           <form id="signin-form" onSubmit={this.handleSubmit}>
             <ul>
               <li>
