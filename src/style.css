@@ -10,6 +10,7 @@ ol,
 ul {
   list-style: none;
   padding: 0;
+  margin: 0 !important;
 }
 
 a {
@@ -31,6 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 /* header user display name */
@@ -50,6 +52,7 @@ header {
 .card {
   background-color: white;
   border-radius: 8px;
+  padding: 8px;
 }
 
 .container {
@@ -59,6 +62,11 @@ header {
 .subtext {
   margin: 0 !important;
   text-align: right;
+  padding-top: 8px;
+}
+
+#trackerContainer .subtext {
+  font-style: italic;
 }
 
 #comms {
@@ -80,7 +88,8 @@ header {
 
 #messages p,
 #messages h4 {
-  margin: .5em !important;
+  margin: 0 !important;
+  padding-bottom: 6px;
 }
 
 #weather h4,
@@ -92,10 +101,6 @@ header {
 @media (min-width: 700px) {
   body {
     margin: 42px;
-  }
-
-  header {
-    margin-bottom: 16px;
   }
 
   header h1 {
