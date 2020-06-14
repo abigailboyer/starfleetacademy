@@ -1,7 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import AccountHeader from './AccountHeader'
 import Firebase, {FirebaseContext} from '../../firebase'
 import auth from '../../firebase/firebase'
+import firestore from '../../firebase/firebase'
+import {UserContextConsumer} from '../../providers/UserProvider'
 
 class Signup extends React.Component {
   constructor() {
@@ -30,6 +33,7 @@ class Signup extends React.Component {
     e.preventDefault();
     console.log(this.state.username, this.state.password2);
 
+    /* should i be doing it like this idk */
     const {
       username,
       email,
@@ -38,9 +42,18 @@ class Signup extends React.Component {
 
     Firebase.auth().createUserWithEmailAndPassword(email, password1).catch(function(error) {
       console.log(error);
-    });
+    }).catch(
+      console.log("account created"),
+      Firebase.auth().onAuthStateChanged((user) => {
+        if(user) {
+          console.log(user.uid);
+        } else {
+          console.log("logged out");
+        }
+      }),
+      this.props.history.push("/")
+    )
 
-    console.log("account created");
   }
 
   runTwoFunctions(e) {
@@ -158,7 +171,12 @@ class Signup extends React.Component {
             </li>
 
             <li>
-              <input type="submit" disabled={isInvalid} id="signup-form-submit" value="Continue" />
+              <input
+              type="submit"
+              disabled={isInvalid}
+              id="signup-form-submit"
+              value="Continue"
+            />
             </li>
             <li id="form-error-message">
               {/* for later */}

@@ -1,15 +1,19 @@
 import React from 'react'
-import UserContext from '../../providers/UserProvider'
+import {UserContextConsumer} from '../../providers/UserProvider'
 import {FirebaseContext} from '../../firebase'
 
 function User(props) {
   return(
     <FirebaseContext.Consumer>
       {firebase => (
-        <section id="user">
-          <p>connected</p>
-          <button id="logout">Logout</button>
-        </section>
+        <UserContextConsumer>
+          {user => (
+            <section id="user">
+              <p>{user}</p>
+              <button id="logout">Logout</button>
+            </section>
+          )}
+        </UserContextConsumer>
       )}
     </FirebaseContext.Consumer>
   )
