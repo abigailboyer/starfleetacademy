@@ -1,6 +1,7 @@
 import React from 'react'
 import {UserContextConsumer} from '../../providers/UserProvider'
 import {FirebaseContext} from '../../firebase'
+import Logout from './Logout'
 
 function User(props) {
   return(
@@ -10,7 +11,7 @@ function User(props) {
           {user => (
             <section id="user">
               <p>{user}</p>
-              <button id="logout">Logout</button>
+              <Logout />
             </section>
           )}
         </UserContextConsumer>

@@ -14,7 +14,6 @@ class Signup extends React.Component {
       homeworld: '',
       species: '',
 
-      username: '',
       email: '',
       password1: '',
       password2: '',
@@ -22,7 +21,6 @@ class Signup extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.runTwoFunctions = this.runTwoFunctions.bind(this);
   }
 
   handleChange(e) {
@@ -31,7 +29,6 @@ class Signup extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state.username, this.state.password2);
 
     /* should i be doing it like this idk */
     const {
@@ -53,28 +50,6 @@ class Signup extends React.Component {
       }),
       this.props.history.push("/")
     )
-
-  }
-
-  runTwoFunctions(e) {
-    this.handleChange(e);
-    /* maybe i should just run this after submitting so i dont have to do this */
-    this.createUsername();
-  }
-
-  createUsername() {
-    /* create username based off of name input */
-
-    /* remove any punctuation */
-    /* separate name by spaces */
-    /* use first letter of input and last section of text */
-    /* if only one word, use whole word or last 10 letters or something */
-    /* check if the database already has that username, add numbers to the end until its available */
-    /* print username to form */
-
-    /* for now, just hardcode it */
-    this.setState({username: "usertest"});
-    console.log(this.state.username);
   }
 
   render() {
@@ -82,7 +57,6 @@ class Signup extends React.Component {
       name,
       homeworld,
       species,
-      username,
       email,
       password1,
       password2,
@@ -110,7 +84,7 @@ class Signup extends React.Component {
                 id="name"
                 placeholder="Jim Kirk"
                 value={name}
-                onChange={this.runTwoFunctions}
+                onChange={this.handleChange}
               />
             </li>
             <li>
@@ -135,9 +109,6 @@ class Signup extends React.Component {
                 onChange={this.handleChange}
                 value={species}
               />
-            </li>
-            <li>
-              <p id="generatedUsername">Your username: </p>
             </li>
             <li>
               <label htmlFor="userEmail">Email</label>

@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import AccountHeader from './AccountHeader'
+import Firebase, {FirebaseContext} from '../../firebase'
 
 class Login extends React.Component {
   constructor() {
     super();
     this.state = {
-      username: '',
       email: '',
       password: '',
       error: null
@@ -21,12 +21,22 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+
+    const {
+      email,
+      password
+    } = this.state;
+
+    Firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+      console.log(error);
+    });
+
     console.log("signed in");
+    this.props.history.push("/")
   }
 
   render() {
     const {
-      username,
       email,
       password,
       error
@@ -34,21 +44,21 @@ class Login extends React.Component {
 
     const isInvalid =
       password === '' ||
-      username === '';
+      email === '';
 
     return(
       <main>
         <AccountHeader />
 
         <section id="signin">
-          <form id="signin-form">
+          <form id="signin-form" onSubmit={this.handleSubmit}>
             <ul>
               <li>
                 <input
                   type="text"
-                  id="username"
-                  placeholder="Username"
-                  value={username}
+                  id="email"
+                  placeholder="Email"
+                  value={email}
                   onChange={this.handleChange}
                 />
               </li>
