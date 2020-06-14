@@ -5,8 +5,8 @@ function Tracker() {
     <article className="card" id="tracker">
       <ul>
         <li>
-          <label for="meal-tracker-progress">Meal Credits</label>
-          <progress id="meal-tracker-progress" max="100" value="75">75%</progress>
+          <label for="meal-credits-progress">Meal Credits</label>
+          <progress id="meal-credits-progress" max="100" value="75">75%</progress>
         </li>
         <li>
           <label for="water-credits-progress">Water Credits</label>
