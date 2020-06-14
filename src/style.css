@@ -175,8 +175,8 @@ header {
   #cardContainer {
     display: grid;
     grid-template-columns: 30% auto auto 30%;
+    grid-template-rows: auto auto max-content auto;
     gap: 1px 21px;
-    align-items: start;
   }
 
   #commsContainer,
@@ -188,12 +188,16 @@ header {
     grid-column: 2 / span 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    background-color: white;
   }
 
   #coursesContainer {
     grid-column: 1 / span 3;
     grid-row-start: 3;
     grid-row-end: 5;
+  }
+
+  #studentInfoContainer {
   }
 }
 
