@@ -83,23 +83,28 @@ header {
   margin-bottom: 72px;
 }
 
+.signup {
+  margin-bottom: 0;
+}
+
 #signupLink {
   color: white;
-  margin: 0 0 0 16px !important;
+  margin: 8px 0 0 16px !important;
   padding: 8px 0;
   font-size: 14px;
   float: left;
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
   border: 0;
   border-radius: 8px;
   padding: 8px;
   opacity: 80%;
-  margin: 8px;
+  margin: 0 0 8px 0;
   width: 250px;
-  color: rgba(0, 0, 0, .68);
+  color: black;
 }
 
 input[type="submit"] {
@@ -108,9 +113,34 @@ input[type="submit"] {
   border: 0;
   border-radius: 8px;
   padding: 8px 21px;
+  margin-top: 8px;
   float: right;
   font-size: 14px;
   font-family: 'Open Sans', sans-sans-serif;
+}
+
+input[type="submit"]:disabled {
+  opacity: 75%;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px lightblue;
+  box-shadow: 0 0 5px;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 80%;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  padding: 0 16px;
+  font-weight: 600;
+  color: white;
 }
 
 /* header user display name */

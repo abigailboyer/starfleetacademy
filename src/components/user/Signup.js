@@ -72,88 +72,89 @@ class Signup extends React.Component {
       species === '';
 
     return (
-      <main>
-        <AccountHeader />
+      <main id="account">
+        <section className="accountForm signup">
+          <AccountHeader />
+          <form id="signup" onSubmit={this.handleSubmit}>
+            <ul>
+              <li>
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Jim Kirk"
+                  value={name}
+                  onChange={this.handleChange}
+                />
+              </li>
+              <li>
+                {/* change to something more graphic and pretty to
+                  match specialization selection & change to limited options later */}
+                <label htmlFor="homeworld">Homeworld</label>
+                <input
+                  type="text"
+                  id="homeworld"
+                  placeholder="Earth"
+                  onChange={this.handleChange}
+                  value={homeworld}
+                />
+              </li>
+              <li>
+                {/* change to drop down options later */}
+                <label htmlFor="species">Species</label>
+                <input
+                  type="text"
+                  id="species"
+                  placeholder="Human"
+                  onChange={this.handleChange}
+                  value={species}
+                />
+              </li>
+              <li>
+                <label htmlFor="userEmail">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="jimkirk@gmail.com"
+                  onChange={this.handleChange}
+                  value={email}
+                />
+              </li>
+              <li>
+                <label htmlFor="password1">Password</label>
+                <input
+                  type="password"
+                  id="password1"
+                  placeholder="Password"
+                  onChange={this.handleChange}
+                  value={password1}
+                />
+              </li>
+              <li>
+                <label htmlFor="password2">Confirm Password</label>
+                <input
+                  type="password"
+                  id="password2"
+                  placeholder="Password Confirmation"
+                  onChange={this.handleChange}
+                  value={password2}
+                />
+              </li>
 
-        <form id="signup" onSubmit={this.handleSubmit}>
-          <ul>
-            <li>
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Jim Kirk"
-                value={name}
-                onChange={this.handleChange}
+              <li>
+                <input
+                type="submit"
+                disabled={isInvalid}
+                id="signup-form-submit"
+                value="Continue"
               />
-            </li>
-            <li>
-              {/* change to something more graphic and pretty to
-                match specialization selection & change to limited options later */}
-              <label htmlFor="homeworld">Homeworld</label>
-              <input
-                type="text"
-                id="homeworld"
-                placeholder="Earth"
-                onChange={this.handleChange}
-                value={homeworld}
-              />
-            </li>
-            <li>
-              {/* change to drop down options later */}
-              <label htmlFor="species">Species</label>
-              <input
-                type="text"
-                id="species"
-                placeholder="Human"
-                onChange={this.handleChange}
-                value={species}
-              />
-            </li>
-            <li>
-              <label htmlFor="userEmail">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="jimkirk@gmail.com"
-                onChange={this.handleChange}
-                value={email}
-              />
-            </li>
-            <li>
-              <label htmlFor="password1">Password</label>
-              <input
-                type="password"
-                id="password1"
-                placeholder="Password"
-                onChange={this.handleChange}
-                value={password1}
-              />
-            </li>
-            <li>
-              <label htmlFor="password2">Password</label>
-              <input
-                type="password"
-                id="password2"
-                placeholder="Password Confirmation"
-                onChange={this.handleChange}
-                value={password2}
-              />
-            </li>
-
-            <li>
-              <input
-              type="submit"
-              disabled={isInvalid}
-              id="signup-form-submit"
-              value="Continue"
-            />
-            </li>
-            <li id="form-error-message">
-              {/* for later */}
-            </li>
-          </ul>
-        </form>
+              </li>
+              <li id="form-error-message">
+                {/* for later */}
+              </li>
+            </ul>
+          </form>
+        </section>
       </main>
     )
   }
