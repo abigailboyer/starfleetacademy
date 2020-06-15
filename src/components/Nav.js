@@ -1,23 +1,29 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import Dashboard from './dashboard/Dashboard'
+import Comms from './Comms'
+import Academics from './Academics'
+import Registration from './Registration'
+import Library from './Library'
 
 function Nav() {
   return(
     <nav>
       <ul>
         <li>
-          Dashboard
+          <Link to={Dashboard}>Dashboard</Link>
         </li>
         <li>
-          Comms
+          <Link to={Comms}>Comms</Link>
         </li>
         <li>
-          Academics
+          <Link to={Academics}>Academics</Link>
         </li>
         <li>
-          Registration
+          <Link to={Registration}>Registration</Link>
         </li>
         <li>
-          Library
+          <Link to={Library}>Library</Link>
         </li>
       </ul>
     </nav>
