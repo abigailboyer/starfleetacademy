@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import MediaQuery from 'react-responsive'
 import Dashboard from './dashboard/Dashboard'
 import Comms from './Comms'
 import Academics from './Academics'

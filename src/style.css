@@ -41,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  margin: 21px 0;
 }
 
 /* login/signup form pages */
@@ -285,11 +285,15 @@ hgroup h5 {
     font-size: 32px;
   }
 
+  nav {
+    margin-right: 32px;
+  }
+
   /* dashboard - grid layout */
 
   main {
     display: grid;
-    grid-template-columns: 15% auto;
+    grid-template-columns: auto auto;
   }
 
   header {
@@ -299,13 +303,9 @@ hgroup h5 {
     align-items: center;
   }
 
-  nav {
-    grid-column: 1;
-  }
-
   #cardContainer {
     display: grid;
-    grid-template-columns: 30% auto auto 30%;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto max-content auto;
     gap: 1px 21px;
   }
