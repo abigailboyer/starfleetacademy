@@ -1,10 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import AccountHeader from './AccountHeader'
-import Firebase, {FirebaseContext} from '../../firebase'
-import auth from '../../firebase/firebase'
-import firestore from '../../firebase/firebase'
-import {UserContextConsumer} from '../../providers/UserProvider'
+import Firebase from '../../firebase'
 
 class Signup extends React.Component {
   constructor() {

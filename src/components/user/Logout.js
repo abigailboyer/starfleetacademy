@@ -1,5 +1,5 @@
 import React from 'react'
-import Firebase, {FirebaseContext} from '../../firebase'
+import Firebase from '../../firebase'
 
 class Logout extends React.Component {
   constructor() {
