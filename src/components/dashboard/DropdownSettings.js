@@ -1,18 +1,40 @@
 import React from 'react'
 import User from '../user/User'
 
-function DropdownSettings() {
-  /* when clicking menu, display the ul */
+class DropdownSettings extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isHidden: true
+    }
+    this.toggleHidden = this.toggleHidden.bind(this)
+  }
 
-  return (
-    <nav id="settings">
-      <h5 id="menuTitle">Menu</h5>
-      <ul>
-        <li>Settings</li>
-        <li><User /></li>
-      </ul>
-    </nav>
-  )
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+
+  render() {
+    if(this.state.isHidden) {
+      return (
+        <nav id="menuNav">
+          <button id="menuTitle" onClick={this.toggleHidden}>Menu</button>
+        </nav>
+      )
+    } else {
+      return (
+        <nav id="menuNav">
+          <button id="menuTitle" onClick={this.toggleHidden}>Menu</button>
+          <ul id="menu">
+            <li>Settings</li>
+            <li><User /></li>
+          </ul>
+        </nav>
+      )
+    }
+  }
 }
 
 export default DropdownSettings

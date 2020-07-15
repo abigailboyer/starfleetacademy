@@ -19,13 +19,13 @@ class NavMenu extends React.Component {
   render () {
     if(this.state.isHidden) {
       return(
-        <nav>
+        <nav id="menuNav">
           <button id="menuTitle" onClick={this.toggleHidden}>Menu</button>
         </nav>
       )
     } else {
       return(
-        <nav>
+        <nav id="menuNav">
           <button id="menuTitle" onClick={this.toggleHidden}>Menu</button>
           <ul id="menu">
             <li><a href="/dashboard">Dashboard</a></li>
@@ -33,8 +33,8 @@ class NavMenu extends React.Component {
             <li><a href="/academics">Academics</a></li>
             <li><a href="/registration">Registration</a></li>
             <li><a href="/library">Library</a></li>
-            <li><a href="/settings">Settings</a></li>
-            <li><a href="/">Logout</a></li>
+            <li><a href="/settings" className="greyed-out">Settings</a></li>
+            <li><a href="/" className="greyed-out">Logout</a></li>
           </ul>
         </nav>
       )
