@@ -1,19 +1,17 @@
 import React from 'react'
-import Dropdown from 'react-bootstrap/Dropdown'
 import User from '../user/User'
 
 function DropdownSettings() {
-  return (
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Menu
-      </Dropdown.Toggle>
+  /* when clicking menu, display the ul */
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="/settings">Settings</Dropdown.Item>
-        <Dropdown.Item><User /></Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+  return (
+    <nav id="settings">
+      <h5 id="menuTitle">Menu</h5>
+      <ul>
+        <li>Settings</li>
+        <li><User /></li>
+      </ul>
+    </nav>
   )
 }
 
