@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/abigailboyer/starfleetacademy/static/css/main.c2cfbbc2.chunk.css",
+    "main.js": "/abigailboyer/starfleetacademy/static/js/main.420c457e.chunk.js",
+    "main.js.map": "/abigailboyer/starfleetacademy/static/js/main.420c457e.chunk.js.map",
+    "runtime-main.js": "/abigailboyer/starfleetacademy/static/js/runtime-main.e3884fbc.js",
+    "runtime-main.js.map": "/abigailboyer/starfleetacademy/static/js/runtime-main.e3884fbc.js.map",
+    "static/js/2.cc277668.chunk.js": "/abigailboyer/starfleetacademy/static/js/2.cc277668.chunk.js",
+    "static/js/2.cc277668.chunk.js.map": "/abigailboyer/starfleetacademy/static/js/2.cc277668.chunk.js.map",
+    "index.html": "/abigailboyer/starfleetacademy/index.html",
+    "precache-manifest.f7a4b1b2f038341415d6c415169486c7.js": "/abigailboyer/starfleetacademy/precache-manifest.f7a4b1b2f038341415d6c415169486c7.js",
+    "service-worker.js": "/abigailboyer/starfleetacademy/service-worker.js",
+    "static/css/main.c2cfbbc2.chunk.css.map": "/abigailboyer/starfleetacademy/static/css/main.c2cfbbc2.chunk.css.map",
+    "static/js/2.cc277668.chunk.js.LICENSE.txt": "/abigailboyer/starfleetacademy/static/js/2.cc277668.chunk.js.LICENSE.txt",
+    "static/media/starfleet-academy.jpg": "/abigailboyer/starfleetacademy/static/media/starfleet-academy.b04bc807.jpg",
+    "static/media/style.css": "/abigailboyer/starfleetacademy/static/media/starfleetacademy-small.8256022d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3884fbc.js",
+    "static/js/2.cc277668.chunk.js",
+    "static/css/main.c2cfbbc2.chunk.css",
+    "static/js/main.420c457e.chunk.js"
+  ]
+}
