@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b358a1bcfeab0d67c97ea0382a6484f",
+    "revision": "b833acb71a3bcf823469651b6ea9f403",
     "url": "/starfleetacademy/index.html"
   },
   {
-    "revision": "032c85744cdf4afaba45",
+    "revision": "896a76207b5e570574fd",
     "url": "/starfleetacademy/static/css/main.f64b9e4c.chunk.css"
   },
   {
-    "revision": "f14edd18081bc26e9bdb",
-    "url": "/starfleetacademy/static/js/2.82277807.chunk.js"
+    "revision": "fa5af336b5824951cd48",
+    "url": "/starfleetacademy/static/js/2.5b1f2fa7.chunk.js"
   },
   {
     "revision": "a9d1a04980daa70b123310242d9dcc58",
-    "url": "/starfleetacademy/static/js/2.82277807.chunk.js.LICENSE.txt"
+    "url": "/starfleetacademy/static/js/2.5b1f2fa7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "032c85744cdf4afaba45",
-    "url": "/starfleetacademy/static/js/main.51534396.chunk.js"
+    "revision": "896a76207b5e570574fd",
+    "url": "/starfleetacademy/static/js/main.3ede028c.chunk.js"
   },
   {
     "revision": "ac7fe7fd08272ae8d847",
