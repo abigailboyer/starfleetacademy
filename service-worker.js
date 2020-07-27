@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/starfleetacademy/precache-manifest.fe22a505dcb3327bfb7d922422393f76.js"
+  "/starfleetacademy/precache-manifest.cc4e32f0cfc0083db2f715e80f7f7bd4.js"
 );
 
 self.addEventListener('message', (event) => {
