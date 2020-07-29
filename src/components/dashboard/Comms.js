@@ -3,7 +3,7 @@ import Message from './Message'
 
 function Comms() {
   return (
-    <article className="card" id="comms">
+    <article className="card blueBorder" id="comms">
       <article id="messages">
         <Message />
         <Message />

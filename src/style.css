@@ -181,15 +181,15 @@ form label {
   text-decoration: none;
 }
 
-#comms {
+.blueBorder {
   border-top: 21px solid #23729B;
 }
 
-#tracker {
+.redBorder {
   border-top: 21px solid #A11A20;
 }
 
-#studentInfo {
+.yellowBorder {
   border-top: 21px solid #EAD075;
 }
 

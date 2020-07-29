@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tracker() {
   return (
-    <article className="card" id="tracker">
+    <article className="card redBorder" id="tracker">
       <ul>
         <li>
           <label htmlFor="meal-credits-progress">Meal Credits</label>

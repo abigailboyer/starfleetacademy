@@ -2,7 +2,7 @@ import React from 'react'
 
 function StudentInfo() {
   return (
-    <article className="card" id="studentInfo">
+    <article className="card yellowBorder" id="studentInfo">
       <ul>
         <li><b>Student:</b> Kirk, James T.</li>
         <li id="student-ID"><b>ID:</b> 20384</li>
