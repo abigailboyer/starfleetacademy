@@ -315,6 +315,24 @@ hgroup h5 {
   color: #3c3c3c;
 }
 
+/* academics detail */
+
+#cirriculum p {
+  margin: 0;
+}
+
+#cirriculum h4 {
+}
+
+.list {
+  list-style: circle;
+  padding-left: 14px;
+}
+
+.category {
+  margin-bottom: 7px;
+}
+
 @media (min-width: 700px) {
   body {
     margin: 64px;
