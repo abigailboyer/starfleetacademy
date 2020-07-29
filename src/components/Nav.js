@@ -11,13 +11,13 @@ function Nav() {
     <nav>
       <ul>
         <li>
-          <Link to={Dashboard}>Dashboard</Link>
+          <Link to='/dashboard'>Dashboard</Link>
         </li>
         <li>
           <Link to={Comms}>Comms</Link>
         </li>
         <li>
-          <Link to={Academics}>Academics</Link>
+          <Link to='/academics'>Academics</Link>
         </li>
         <li>
           <Link to={Registration}>Registration</Link>
