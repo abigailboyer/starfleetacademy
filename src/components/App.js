@@ -7,6 +7,7 @@ import Login from './user/Login'
 import Academics from './Academics'
 import Header from './Header'
 import Nav from './Nav'
+import Comms from './Comms'
 import MediaQuery from 'react-responsive'
 
 function App() {
@@ -20,9 +21,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Dashboard} />
+          <Route exact path ='/dashboard' component={Dashboard} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/academics' component={Academics} />
+          <Route exact path='/comms' component={Comms} />
         </Switch>
       </Router>
     </main>
