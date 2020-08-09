@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b833acb71a3bcf823469651b6ea9f403",
+    "revision": "435335d67c2be709ce655a7c3302ce3b",
     "url": "/starfleetacademy/index.html"
   },
   {
-    "revision": "896a76207b5e570574fd",
-    "url": "/starfleetacademy/static/css/main.f64b9e4c.chunk.css"
+    "revision": "ccb78f90fb03de9cf7bf",
+    "url": "/starfleetacademy/static/css/main.3717dcc8.chunk.css"
   },
   {
     "revision": "fa5af336b5824951cd48",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/starfleetacademy/static/js/2.5b1f2fa7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "896a76207b5e570574fd",
-    "url": "/starfleetacademy/static/js/main.3ede028c.chunk.js"
+    "revision": "ccb78f90fb03de9cf7bf",
+    "url": "/starfleetacademy/static/js/main.f65efced.chunk.js"
   },
   {
     "revision": "ac7fe7fd08272ae8d847",
