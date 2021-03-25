@@ -8,6 +8,7 @@ import Academics from './Academics'
 import Header from './Header'
 import Nav from './Nav'
 import Comms from './Comms'
+import TrackChange from './petitions/TrackChange'
 import MediaQuery from 'react-responsive'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route exact path='/login' component={Login} />
           <Route exact path='/academics' component={Academics} />
           <Route exact path='/comms' component={Comms} />
+          <Route exact path='/petition' component={TrackChange} />
         </Switch>
       </Router>
     </main>

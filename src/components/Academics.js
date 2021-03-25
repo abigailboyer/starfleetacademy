@@ -2,7 +2,7 @@ import React from 'react'
 
 function Academics() {
   return(
-    /* command only for now, figure out more later */
+    /* command only for now */
     <section id="academics" className="card container yellowBorder">
       <section id="cirriculum">
         <ul>
@@ -13,8 +13,8 @@ function Academics() {
                 Category
                 <p className="smallText">Six credits from:</p>
                 <ul className="list">
-                  <li>Course 101</li>
-                  <li>Course 103</li>
+                  <li>Course 101: Warp Theory</li>
+                  <li>Course 103: Ancient Wars</li>
                 </ul>
               </li>
               <li className="category">
