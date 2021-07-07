@@ -28,7 +28,7 @@ class Signup extends React.Component {
 
     /* should i be doing it like this idk */
     const {
-      username,
+      name,
       email,
       password1
     } = this.state;
@@ -40,8 +40,14 @@ class Signup extends React.Component {
       Firebase.auth().onAuthStateChanged((user) => {
         if(user) {
           console.log(user.uid);
+
+          Firebase.firestore().collection("users").doc(user.uid).set({
+            name: name
+          });
+
+          console.log("user document created");
         } else {
-          console.log("logged out");
+          console.log("logged out / else");
         }
       }),
       this.props.history.push("/")
