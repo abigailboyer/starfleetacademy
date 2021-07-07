@@ -1,4 +1,5 @@
 import React from 'react'
+import Logout from '../user/Logout.js'
 
 class NavMenu extends React.Component {
   constructor() {
@@ -34,7 +35,7 @@ class NavMenu extends React.Component {
             <li><a href="/registration">Registration</a></li>
             <li><a href="/library">Library</a></li>
             <li><a href="/settings" className="greyed-out">Settings</a></li>
-            <li><a href="/" className="greyed-out">Logout</a></li>
+            <Logout />
           </ul>
         </nav>
       )

@@ -16,6 +16,21 @@ class Login extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount(){
+    var user = Firebase.auth().currentUser;
+    console.log(user);
+
+    Firebase.auth().signOut().then(function() {
+      console.log("signed out");
+      this.props.history.push('/login');
+    }).catch(function(error) {
+      console.log(error);
+    });
+
+    var user2 = Firebase.auth().currentUser;
+    console.log(user2);
+  }
+
   handleChange(e) {
     this.setState({ [e.target.id]: e.target.value})
   }
@@ -33,7 +48,7 @@ class Login extends React.Component {
     });
 
     console.log("signed in");
-    this.props.history.push("/")
+    this.props.history.push("/");
   }
 
   render() {
